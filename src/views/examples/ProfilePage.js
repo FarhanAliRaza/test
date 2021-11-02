@@ -132,7 +132,10 @@ export default function ProfilePage() {
 
               
                 <p className='profile-description'>
-                git init
+               Kozmos Alien is a collection of 8,888 aliens equipped with advanced technology and ultrasonic weapons.
+               Each one is equipped with armor, weapons, masks, accessories, and special powers . Owning any one of our NFTs grants
+               membership to our space club !
+               
                 </p>
 
                 <div className='btn-wrapper profile pt-3'>
