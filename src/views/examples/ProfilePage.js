@@ -480,6 +480,8 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                         </div>
                     </div>
                 </div>
+                
+                
 
          
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
@@ -490,8 +492,8 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                             </figure>
                         </div>
                         <div class="caption-box">
-                            <h4 class="name"><a href="#">TWA-D3 </a></h4>
-                            <span class="designation">Blockchain developer</span>
+                            <h4 class="name"><a href="https://twitter.com/Nnamokooh"> Kaycee  </a></h4>
+                            <span class="designation">Project Manager </span>
                         </div>
                     </div>
                 </div>
