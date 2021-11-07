@@ -133,8 +133,8 @@ export default function ProfilePage() {
               
                 <p className='profile-description'>
                Kozmos Alien is a collection of 8,888 aliens equipped with advanced technology and ultrasonic weapons.
-               Each one is equipped with armor, weapons, masks, accessories, and special powers . Owning any one of our NFTs grants
-               membership to our space club !
+               Each one is equipped with armor, weapons, masks, accessories, and special powers . Each Alien NFT contains a clue to solving our weekly crypto puzzles
+               hosted in our discord!!! 
                
                 </p>
 
@@ -260,9 +260,9 @@ export default function ProfilePage() {
                         <Col md='8'>
                           <h6 class='price-h'>Price per alien</h6>
                           <h6 class='price-n'>
-                            <span>0.08 </span>Eth Each
+                            <span>0.06 </span>Eth Each
                           </h6>
-                          <h6 class='price-h'>9,999 remaining</h6>
+                          <h6 class='price-h'>8,888 remaining</h6>
                         </Col>
                       </Row>
                     </div>
@@ -279,9 +279,9 @@ export default function ProfilePage() {
                       <div>
                         <h6 class='price-h'>Price per alien</h6>
                         <h6 class='price-n'>
-                          <span>0.08 </span>Eth Each
+                          <span>0.06 </span>Eth Each
                         </h6>
-                        <h6 class='price-h'>9,999 remaining</h6>
+                        <h6 class='price-h'>8,888 remaining</h6>
                       </div>
                     </div>
                     <div class='form-div'>
@@ -292,7 +292,7 @@ export default function ProfilePage() {
 
                     <div class='ta-div'>
                       <h6 class='totalh'>Total</h6>
-                      <h6 class='totala'>0.08 ETH</h6>
+                      <h6 class='totala'>0.06 ETH</h6>
                     </div>
 
                     <div class='hline'></div>
@@ -330,7 +330,10 @@ export default function ProfilePage() {
                   <Col sm='10'>
                     <span class='pointz-des'>
                     <strong>The Galaxy is created </strong> <br/><br/>
-                    The private discord channel will be available exclusively for Kozmo Alien  owners.
+                    The private discord channel will be available exclusively for Kozmo Alien  owners. 
+                    Over  <strong>5 ETH  <strong> to be won through our  <strong>weekly crypto puzzles  <strong>, 
+                    available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!
+                  
 
                     <strong>  🌟  Dj $pace  🌟  </strong> <br/><br/><br/><br/>
              DJ $pace joins the kozmos. and transmits his music to earth. Live streamed sets every week. <br/><br/>
@@ -340,8 +343,9 @@ export default function ProfilePage() {
   Triangulum galaxies are all rivals. Which side will you join? <br/><br/>
 
 Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.            
-     Members of Galaxies will be able to participate in games, giveaways ,  
-     Solve mysteries  and  invade other galaxies to earn  more $Space token. 
+     Members of Galaxies will be able to participate in games, giveaways and quizzes ! 
+     Each Galaxiy will fight to control resources , land and weapons!
+     Compete against other Galaxies on the Player Galaxy  Ranked Leaderboard! 
 
                     </span>
                   </Col>
@@ -361,8 +365,8 @@ Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.
                   <strong>  $Space Token </strong>
                   An ERC20 utility token that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
                   your
-                   aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
-In the future you will be able to use these tokens to invade other galaxies and upgrade your spaceship and kozmo alien.
+                   Aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
+In the future you will be able to use these tokens to invade other galaxies and upgrade your spaceship , planet and  Kozmo alien.
 Every Kozmo gains 10 $Space per day, which can be claimable by paying gas. 
 
                     </span>
