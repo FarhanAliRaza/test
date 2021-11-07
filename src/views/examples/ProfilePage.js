@@ -331,7 +331,7 @@ export default function ProfilePage() {
                     <span class='pointz-des'>
                     <strong>The Galaxy is created </strong> <br/><br/>
                     The private discord channel will be available exclusively for Kozmo Alien  owners. 
-                    Over  <strong>5 ETH  <strong> to be won through our  <strong>weekly crypto puzzles  <strong>, 
+                    Over  <strong>5 ETH  </strong> to be won through our  <strong>weekly crypto puzzles  </strong>, 
                     available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!
                   
 
