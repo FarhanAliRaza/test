@@ -133,7 +133,7 @@ export default function ProfilePage() {
               
                 <p className='profile-description'>
                Kozmos Alien is a collection of 8,888 aliens equipped with advanced technology and ultrasonic weapons.
-               Each one is equipped with armor, weapons, masks, accessories, and special powers . Each Alien NFT contains a clue to solving our weekly crypto puzzles
+             . Each Alien NFT contains a clue to solving our weekly crypto puzzles
                hosted in our discord!!
                
                 </p>
