@@ -332,7 +332,7 @@ export default function ProfilePage() {
                     <strong>The Galaxy is created </strong> <br/><br/>
                     The private discord channel will be available exclusively for Kozmo Alien  owners. 
                     Over  <strong>5 ETH  </strong> to be won through our  <strong>weekly crypto puzzles  </strong>, 
-                    available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!
+                    available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!<br/><br/><br/><br/>
                   
 
                     <strong>  🌟  Dj $pace  🌟  </strong> <br/><br/><br/><br/>
@@ -343,7 +343,8 @@ export default function ProfilePage() {
   Triangulum galaxies are all rivals. Which side will you join? <br/><br/>
 
 Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.            
-     Members of Galaxies will be able to participate in games, giveaways and quizzes ! 
+     Members of Galaxies will be able to participate in games, giveaways and quizzes ! <br/><br/><br/><br/>
+     
      Each Galaxiy will fight to control resources , land and weapons!
      Compete against other Galaxies on the Player Galaxy  Ranked Leaderboard! 
 
