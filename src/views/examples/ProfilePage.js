@@ -70,7 +70,7 @@ const carouselItems = [
 
   },
   {
-    src: require('assets/img/24.jpg').default,
+    src: require('assets/img/43.jpg').default,
     altText: 'Slide 3',
 
   }
@@ -166,7 +166,7 @@ export default function ProfilePage() {
                   <Button
                     className='btn-icon btn-round'
                     color='dribbble'
-                    href='https://discord.gg/BUWUC7gQ'
+                    href='https://discord.gg/xRN4MtsfVN'
                     id='tooltip951161185'
                     target='_blank'
                   >
@@ -208,7 +208,7 @@ export default function ProfilePage() {
                   <Button
                     className='btn-simple'
                     color='info'
-                    href='https://discord.gg/BUWUC7gQ'
+                    href='https://discord.gg/xRN4MtsfVN'
                     onClick={e => e.preventDefault()}
                   > 
                     <i className='fab fa-discord' /> Join The Communitiy 
