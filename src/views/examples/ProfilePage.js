@@ -56,16 +56,16 @@ import Footer from 'components/Footer/Footer.js'
 
 const carouselItems = [
   {
-    src: "https://imgur.com/a/A5YH94s", 
+    src: "https://i.imgur.com/R9gbQHK.jpeg", 
     altText: 'Slide 1',
   },
   {
-    src: "https://imgur.com/lmiPD0E", 
+    src: "https://i.imgur.com/lmiPD0E.jpeg", 
     altText: 'Slide 2',
     
   },
   {
-    src: "https://imgur.com/AoKhxTH"​,
+    src: "https://i.imgur.com/AoKhxTH.jpeg",
     altText: 'Slide 3',
 
   },
@@ -475,7 +475,7 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img    src= "https://imgur.com/lmiPD0E" />
+                            <figure class="image"><img    src= "https://i.imgur.com/0a6p197.jpeg" />
                                
                             </figure>
                         </div>
@@ -492,7 +492,7 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img    src="https://imgur.com/R9gbQHK" />
+                            <figure class="image"><img    src="https://i.imgur.com/UgC9b7t.jpg" />
                               
                             </figure>
                         </div>
