@@ -154,7 +154,7 @@ export default function ProfilePage() {
                   <Button
                     className='btn-icon btn-round'
                     color='facebook'
-                    href=''
+                    href='https://www.instagram.com/kozmoaliens/'
                     id='tooltip982846143'
                     target='_blank'
                   >
