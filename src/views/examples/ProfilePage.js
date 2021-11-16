@@ -200,9 +200,10 @@ export default function ProfilePage() {
                 <h1 className='profile-title text-left'>Rarity</h1>
                 <h5 className='text-on-back'>02</h5>
                 <p className='profile-description text-left'>
-                  All 8,888 <span>Kozmo</span> Alienss are unique, there is no
-                  one like another. Each Alien is randomly generated with its
-                  own characteristics and expressions
+                  All 8,888 <span>Kozmo</span> Aliens are unique, there is no
+                  one like another. Each Alien is has its own special rank ,
+                  stats and its own unique abilities that can be used to your advantage in space battles ! 
+                  
                 </p>
                 <div className='btn-wrapper pt-3 d-inline-block'> <br/>
                   <Button
