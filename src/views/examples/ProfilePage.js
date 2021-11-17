@@ -325,12 +325,12 @@ export default function ProfilePage() {
               
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 1</span>
+                    <span class='pointz-num'>Phase 1 </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>The Galaxy is created </strong> <br/><br/>
+                    <strong>  5%  The Galaxy is created </strong> <br/><br/>
                     The private discord channel will be available exclusively for Kozmo Alien  owners. 
                     Over  <strong>5 ETH  </strong> to be won through our  <strong>weekly crypto puzzles  </strong>, 
                     available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!<br/><br/><br/><br/>
@@ -358,14 +358,14 @@ Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 2</span>
+                    <span class='pointz-num'>Phase 2  </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                  
                     <span class='pointz-des'>
-                  <strong>  $Space Token </strong>
-                  An ERC20 utility token that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
+                  <strong> 15%  $Space Token </strong>
+                    <strong> Two weeks later   <strong>  An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
                   your
                    Aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
 In the future you will be able to use these tokens to invade other galaxies and upgrade your spaceship , planet and  Kozmo alien.
@@ -381,12 +381,12 @@ Every Kozmo gains 10 $Space per day, which can be claimable by paying gas.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 3</span>
+                    <span class='pointz-num'>Phase 3 </span>
                   </Col>
                 <Fade left>
 
                   <Col sm='10'>
-                    <span class='pointz-des'><strong> Merch drop</strong> <br/><br/>
+                    <span class='pointz-des'><strong>25%   Merch drop</strong> <br/><br/>
                     The Shoppy Planet  is now open.
 Get decked out in an exclusive selection  of Kozmo Alien  merch.
 Get a unique gift from the universe.
@@ -401,12 +401,12 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 4</span>
+                    <span class='pointz-num'>Phase 4  </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>Kosmo SpaceShip </strong> <br/><br/>
+                    <strong> 50 % Kosmo SpaceShip </strong> <br/><br/>
 
                     Kozmo space holders will be able to mint their exclusive 1/1 spaceship. 
                     Later you will be able to use this ship to invade other galaxies 
@@ -420,12 +420,12 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 5</span>
+                    <span class='pointz-num'>Phase 5 </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>Space Wars Begin</strong><br/><br/>
+                    <strong>75% - 100%  Space Wars Begin</strong><br/><br/>
                     An exclusive play to earn PVP game will be launched allowing Kozmo Alien
                      holders to battle and invade other galaxies and earn more space token. 
                     </span>
@@ -461,12 +461,13 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
+                       
                             <figure class="image"><img    src={require('assets/img/90.jpg').default}
 />                              
                             </figure>
                         </div>
                         <div class="caption-box">
-                            <h4 class="name"><a href="#">Leon  </a></h4>
+                            <h4 class="name"><a href=" https://www.instagram.com/leonb_official/">Leon  </a></h4>
                             <span class="designation">Supreme Commander </span>
                         </div>
                     </div>
@@ -481,7 +482,7 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
                             </figure>
                         </div>
                         <div class="caption-box">
-                            <h4 class="name"><a href="#">Shahidaasy</a></h4>
+                            <h4 class="name"><a href="https://www.linkedin.com/in/3dhome/">Shahidaasy</a></h4>
                             <span class="designation">Graphic Designer </span>
                         </div>
                     </div>
