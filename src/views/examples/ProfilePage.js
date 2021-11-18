@@ -365,7 +365,7 @@ Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.
                  
                     <span class='pointz-des'>
                   <strong> 15%  $Space Token </strong>
-                    <strong> Two weeks later   <strong>  An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
+                    <strong> Two weeks later   </strong>  An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
                   your
                    Aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
 In the future you will be able to use these tokens to invade other galaxies and upgrade your spaceship , planet and  Kozmo alien.
