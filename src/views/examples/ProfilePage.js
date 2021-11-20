@@ -56,21 +56,21 @@ import Footer from 'components/Footer/Footer.js'
 
 const carouselItems = [
   {
-    src: "https://i.imgur.com/R9gbQHK.jpeg", 
+    src: "https://i.imgur.com/pWap3Z1.png", 
     altText: 'Slide 1',
   },
   {
-    src: "https://i.imgur.com/lmiPD0E.jpeg", 
+    src: "https://i.imgur.com/YoSa7Uh.png", 
     altText: 'Slide 2',
     
   },
   {
-    src: "https://i.imgur.com/AoKhxTH.jpeg",
+    src: "https://i.imgur.com/8V0fd9Z.jpg",
     altText: 'Slide 3',
 
   },
   {
-    src: require('assets/img/43.jpg').default,
+    src: "https://i.imgur.com/j1uywDB.png"
     altText: 'Slide 3',
 
   }
