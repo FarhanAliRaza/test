@@ -70,7 +70,7 @@ const carouselItems = [
 
   },
   {
-    src: "https://i.imgur.com/j1uywDB.png"
+    src: "https://i.imgur.com/j1uywDB.png",
     altText: 'Slide 3',
 
   }
