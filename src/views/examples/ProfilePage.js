@@ -325,11 +325,12 @@ export default function ProfilePage() {
               
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Initial minting launch (1,000 NFTs)  </span>
+                    <span class='pointz-num'>Phase 1   </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
+                    <strong> Initial minting launch (1,000 NFTs) </strong><br/><br/>
                     <strong>  December 2021   </strong> <br/><br/>
                     The private discord channel will be available exclusively for Kozmo Alien  owners. 
                     Over  <strong>5 ETH  </strong> to be won through our  <strong>weekly crypto puzzles  </strong>, 
@@ -364,11 +365,11 @@ Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.
                  
                     <span class='pointz-des'>
                   <strong> January  2022 <br/><br/>   $Space Token </strong>
-                    <strong> Two weeks later   </strong>  An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
+                    An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
                   your
                    Aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
 In the future you will be able to use these tokens to invade other galaxies and upgrade your spaceship , planet and  Kozmo alien.
-Every Kozmo gains 10 $Space per day, which can be claimable by paying gas. 
+Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas. 
 
                     </span>
                    
@@ -380,12 +381,12 @@ Every Kozmo gains 10 $Space per day, which can be claimable by paying gas.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Release of Space Atlas Alpha  </span>
+                    <span class='pointz-num'>Phase 3   </span>
                   </Col>
                 <Fade left>
 
                   <Col sm='10'>
-                    <span class='pointz-des'><strong> Q1 2022 </strong> <br/><br/>
+                    <span class='pointz-des'><strong> Q1 2022  <br></br> Release of Space Atlas Alpha </strong> <br/><br/>
                Expected launch date of the Kozmo Aliens gaming platform - Space Atlas.
                You can expect to evolve your Kozmo Aliens and SpaceShips, engage in PvP battles and begin building your own galactic empire! 
                     </span>
@@ -397,12 +398,12 @@ Every Kozmo gains 10 $Space per day, which can be claimable by paying gas.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'> SpaceShip Airdrops + Second Update </span>
+                    <span class='pointz-num'>Phase 4  </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong> Q2 2022 </strong> <br/><br/>
+                    <strong> Q2 2022  <br></br> SpaceShip Airdrops + Second Update </strong> <br/><br/>
 
                     Kozmo space holders will be able to mint their exclusive 1/1 spaceship. 
                    Second Update of the space atlas game will be released , which will include 
@@ -416,14 +417,14 @@ Every Kozmo gains 10 $Space per day, which can be claimable by paying gas.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Release of Space Atlas Community and Second Update </span>
+                    <span class='pointz-num'>Phase 5  </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>Q3 2022 </strong><br/><br/>
+                    <strong>Q3 2022  <br></br> Release of Space Atlas Community and Third Update</strong><br/><br/>
                   Launch of the third update of the Space Atlas game, 
-                  which will include PvE single player mode a mini game , the Space Atlas marketplace, farming, and occupations. 
+                  which will include PvE single player mode , a mini game , the Space Atlas marketplace, farming, and occupations. 
                     </span>
                   </Col>
                   </Fade>
