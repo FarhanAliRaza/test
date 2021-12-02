@@ -325,19 +325,18 @@ export default function ProfilePage() {
               
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 1 </span>
+                    <span class='pointz-num'>Initial minting launch (1,000 NFTs)  </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>  5%  The Galaxy is created </strong> <br/><br/>
+                    <strong>  December 2021   </strong> <br/><br/>
                     The private discord channel will be available exclusively for Kozmo Alien  owners. 
                     Over  <strong>5 ETH  </strong> to be won through our  <strong>weekly crypto puzzles  </strong>, 
-                    available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits!<br/><br/><br/><br/>
+                    available exclusively for Kozmo Alien  owners! <br/><br/> Each Alien will be ranked based on its traits  ! Each Kozmo Alien 
+                    will give advantages in the Space Atlas game ! <br/><br/><br/><br/>
                   
 
-                    <strong>  🌟  Dj $pace  🌟  </strong> <br/><br/><br/><br/>
-             DJ $pace joins the kozmos. and transmits his music to earth. Live streamed sets every week. <br/><br/>
 
              <strong>    🚀 Terraforming 🚀</strong><br/><br/>
  Members can choose which galaxy they belong too. The 3 galaxies; Milky Way, Andromeda, and
@@ -358,13 +357,13 @@ Members may access 1 galaxy via the #galaxies_2000 terminal in Discord.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 2  </span>
+                    <span class='pointz-num'>Phase 2   </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                  
                     <span class='pointz-des'>
-                  <strong> 15%  $Space Token </strong>
+                  <strong> January  2022 <br/><br/>   $Space Token </strong>
                     <strong> Two weeks later   </strong>  An ERC20 utility token will be launched that will be freely tradable on Uniswap & These tokens allow you to rename and upgrade
                   your
                    Aliens and write their own backstory, stored in the metadata on the blockchain.<br/><br/>
@@ -381,17 +380,14 @@ Every Kozmo gains 10 $Space per day, which can be claimable by paying gas.
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 3 </span>
+                    <span class='pointz-num'>Release of Space Atlas Alpha  </span>
                   </Col>
                 <Fade left>
 
                   <Col sm='10'>
-                    <span class='pointz-des'><strong>25%   Merch drop</strong> <br/><br/>
-                    The Shoppy Planet  is now open.
-Get decked out in an exclusive selection  of Kozmo Alien  merch.
-Get a unique gift from the universe.
-Kozmo  owners with a selected trait (to be revealed) will receive free merch!     
-                    
+                    <span class='pointz-des'><strong> Q1 2022 </strong> <br/><br/>
+               Expected launch date of the Kozmo Aliens gaming platform - Space Atlas.
+               You can expect to evolve your Kozmo Aliens and SpaceShips, engage in PvP battles and begin building your own galactic empire! 
                     </span>
                   </Col>
                   </Fade>
@@ -401,16 +397,16 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 4  </span>
+                    <span class='pointz-num'> SpaceShip Airdrops + Second Update </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong> 50 % Kosmo SpaceShip </strong> <br/><br/>
+                    <strong> Q2 2022 </strong> <br/><br/>
 
                     Kozmo space holders will be able to mint their exclusive 1/1 spaceship. 
-                    Later you will be able to use this ship to invade other galaxies 
-                    in an exclusive PVP play to earn game with community prizes.   
+                   Second Update of the space atlas game will be released , which will include 
+                   improved battles , graphics , planets to explore and more units to build
                     </span>
                   </Col>
                   </Fade>
@@ -420,14 +416,14 @@ Kozmo  owners with a selected trait (to be revealed) will receive free merch!
 
                 <Row>
                   <Col sm='2'>
-                    <span class='pointz-num'>Phase 5 </span>
+                    <span class='pointz-num'>Release of Space Atlas Community and Second Update </span>
                   </Col>
                   <Fade left>
                   <Col sm='10'>
                     <span class='pointz-des'>
-                    <strong>75% - 100%  Space Wars Begin</strong><br/><br/>
-                    An exclusive play to earn PVP game will be launched allowing Kozmo Alien
-                     holders to battle and invade other galaxies and earn more space token. 
+                    <strong>Q3 2022 </strong><br/><br/>
+                  Launch of the third update of the Space Atlas game, 
+                  which will include PvE single player mode a mini game , the Space Atlas marketplace, farming, and occupations. 
                     </span>
                   </Col>
                   </Fade>
