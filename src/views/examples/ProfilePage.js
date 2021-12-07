@@ -60,8 +60,8 @@ const carouselItems = [
     altText: 'Slide 1',
   },
   {
-    src: "https://i.imgur.com/YoSa7Uh.png", 
-    altText: 'Slide 2',
+    src: "https://imgur.com/a/ul734y5", 
+    altText: 'Choose Your Fraction',
     
   },
   {
@@ -126,15 +126,14 @@ export default function ProfilePage() {
             <Row>
               <Col lg='6 order-2 order-lg-0' md='6 order-2 order-lg-0'>
                 <h1 className='profile-title text-left'>
-                  Welcome to Kosmo Alien <span>Space Club</span>
+                 Kosmo  <span>Aliens </span>
                 </h1>
                 <h5 className='text-on-back'>01</h5>
 
               
                 <p className='profile-description'>
                Kozmos Alien is a collection of 8,888 aliens equipped with advanced technology and ultrasonic weapons.
-             . Each Alien NFT contains a clue to solving our weekly crypto puzzles
-               hosted in our discord!!
+               with a space strategy  Play to Earn game on ETH ,  launching early  2022!! 
                
                 </p>
 
@@ -197,10 +196,10 @@ export default function ProfilePage() {
                 </Row>
               </Col>
               <Col md='5'>
-                <h1 className='profile-title text-left'>Introducing Space Atlas  Play to earn Game ! </h1>
+                <h1 className='profile-title text-left'>Introducing Kozmo Aliens  Play to earn Game ! </h1>
                 <h5 className='text-on-back'>02</h5>
                 <p className='profile-description text-left'>
-                 <span> Space Atlas ! </span> Dive into the <span> Kozmo Aliens Universe </span> through a A grand strategy game of space exploration, territorial conquest, political domination,  and more!
+                 <span> Fight For Resources and ETH ! </span> Dive into the <span> Kozmo Aliens Universe </span> through a A grand strategy game of space exploration, territorial conquest, political domination,  and more!
                   
                 </p>
                 <div className='btn-wrapper pt-3 d-inline-block'> <br/>
