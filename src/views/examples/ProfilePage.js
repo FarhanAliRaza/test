@@ -196,10 +196,10 @@ export default function ProfilePage() {
                 </Row>
               </Col>
               <Col md='5'>
-                <h1 className='profile-title text-left'>Introducing Kozmo Aliens  Play to earn Game ! </h1>
+                <h1 className='profile-title text-left'>Introducing Kozmo Aliens  Play to earn Game  </h1>
                 <h5 className='text-on-back'>02</h5>
                 <p className='profile-description text-left'>
-                 <span> Fight For Resources and ETH ! </span> Dive into the <span> Kozmo Aliens Universe </span> through a A grand strategy game of space exploration, territorial conquest, political domination,  and more!
+                 <span> Fight For Resources and ETH ! </span> Dive into the <span> Kozmo Aliens Universe </span> through a grand strategy game of space exploration, territorial conquest, political domination,  and more!
                   
                 </p>
                 <div className='btn-wrapper pt-3 d-inline-block'> <br/>
