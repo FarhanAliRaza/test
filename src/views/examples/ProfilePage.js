@@ -60,13 +60,13 @@ const carouselItems = [
     altText: 'Slide 1',
   },
   {
-    src: "https://imgur.com/a/ul734y5", 
+    src: "https://i.imgur.com/SnY3VsQ.png", 
     altText: 'Choose Your Fraction',
     
   },
   {
-    src: "https://i.imgur.com/8V0fd9Z.jpg",
-    altText: 'Slide 3',
+    src: "https://imgur.com/a/rHPEeR9",
+    altText: 'My Galaxy ',
 
   },
   {
