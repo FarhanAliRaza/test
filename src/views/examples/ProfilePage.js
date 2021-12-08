@@ -65,7 +65,7 @@ const carouselItems = [
     
   },
   {
-    src: "https://imgur.com/a/rHPEeR9",
+    src: "https://i.imgur.com/B1YrC3L.jpg",
     altText: 'My Galaxy ',
 
   },
@@ -462,7 +462,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                         </div>
                         <div class="caption-box">
                             <h4 class="name"><a href=" https://www.instagram.com/leonb_official/">Leon  </a></h4>
-                            <span class="designation">Supreme Commander </span>
+                            <span class="designation">CEO  <br></br> B.S. business management @NYU Stern School of Business   </span>
                         </div>
                     </div>
                 </div>
@@ -477,12 +477,25 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                         </div>
                         <div class="caption-box">
                             <h4 class="name"><a href="https://www.linkedin.com/in/3dhome/">Shahidaasy</a></h4>
-                            <span class="designation">Graphic Designer </span>
+                            <span class="designation">Head of 3D & Motion  Department . <br></br> Former graphics designer at Leauge of Legends. </span>
                         </div>
                     </div>
                 </div>
                 
                 
+                <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img    src= "blob:https://imgur.com/ed7186ac-70fc-4791-b1fd-978f81205738" />
+                               
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="https://www.linkedin.com/in/aruncherny/">Arun Cherny</a></h4>
+                            <span class="designation">SMM Manager   </span>
+                        </div>
+                    </div>
+                </div>
 
          
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
@@ -493,8 +506,8 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                             </figure>
                         </div>
                         <div class="caption-box">
-                            <h4 class="name"><a href="https://twitter.com/Nnamokooh"> Kaycee  </a></h4>
-                            <span class="designation">Project Manager </span>
+                            <h4 class="name"><a href="https://twitter.com/Nnamokooh"> Maximillian Gacek  </a></h4>
+                            <span class="designation">Head of Game Development. <br></br> B.S Computer Science Yale University </span>
                         </div>
                     </div>
                 </div>
