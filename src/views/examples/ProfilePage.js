@@ -436,7 +436,15 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
              
             </Row>
           </Container>
+          
         </section>
+            <section className='section' style= {{ backgroundsize:"100%" ,backgroundImage: `url("https://i.imgur.com/04dHDSH.png")`}}>
+        
+<h1 id="few" style={{textAlign:"center" }}> <span> Backed by </span> </h1>
+<br/><br/>  <br/>  <br/><br/>  <br/><br/><br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/> 
+<div id="f">
+  
+</div>
         <section id="n">
         <section id="n" class="speakers-section" style= {{backgroundImage: `url("https://i.ibb.co/92HJxz2/team-bg.jpg")`}}>
         <div class="parallax-scene parallax-scene-2 anim-icons">
@@ -481,12 +489,24 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                         </div>
                     </div>
                 </div>
-                
+                   <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img    src= "https://i.imgur.com/0a6p197.jpeg" />
+                               
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="https://www.linkedin.com/in/3dhome/">Maxwell Rose</a></h4>
+                            <span class="designation">Lead Blockchain Developer <br></br>  </span>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img    src= "https://i.imgur.com/l8bThW2.png" />
+                            <figure class="image"><img    src= "https://i.imgur.com/F7eJkXm.png" />
                                
                             </figure>
                         </div>
@@ -527,6 +547,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
         </div>
     </section>
     </section>
+  
         <Footer />
       </div>
     </>
