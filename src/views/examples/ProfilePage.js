@@ -486,7 +486,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img    src= "blob:https://imgur.com/ed7186ac-70fc-4791-b1fd-978f81205738" />
+                            <figure class="image"><img    src= "https://i.imgur.com/l8bThW2.png" />
                                
                             </figure>
                         </div>
@@ -496,7 +496,19 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                         </div>
                     </div>
                 </div>
-
+                     <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img    src= "https://i.imgur.com/l8bThW2.png" />
+                               
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="https://i.imgur.com/2LlZEOy.jpg/">John Shirman </a></h4>
+                            <span class="designation">Content Director   </span>
+                        </div>
+                    </div>
+                </div>
          
                 <div class="speaker-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                     <div class="inner-box">
