@@ -110,14 +110,14 @@ main {
   margin-left: 30%;
 }
 p {
-  font-size: 1.75em;
-  line-height: 1.75em;
-
-  border-width: 3px;
-  margin: 0;
-  padding: 40px;
-  position: relative;
-  color: #f2f5fa;
+  font-size: 16px;
+    line-height: 1.75em;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    font-family: monospace;
+    position: relative;
+    color: #f2f5fa;
 }
 p:before {
   position: absolute;
@@ -286,20 +286,7 @@ body::after {
     63vw 59vh 0.1vmin rgba(200, 255, 230, 0.7),
     48vw 28vh 0.1vmin rgba(200, 255, 230, 0.7);
 }
-h2::before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: -26vmin;
-  left: 29vmin;
-  width: 62vmin;
-  color: #eee5e9;
-  height: 62vmin;
-  border-radius: 50%;
-  border: 1.3vmin solid currentColor;
-  box-sizing: border-box;
-}
+
 
 em {
   font-family: 'Josefin Sans', sans-serif;
@@ -938,11 +925,7 @@ h3 div {
           padding: 0;
           list-style: none;
       }
-      img {
-  max-width: 100%;
-  height: auto;
-}
-
+     
 
 
 h3::before,
@@ -1259,7 +1242,7 @@ b div {
   }
 }
 .profile-page .profile-description {
-  margin-top: -30px;
+  margin-top: 30px;
   max-width: 450px;
   font-size: 1.13em;
   line-height: 26px;
