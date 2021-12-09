@@ -471,7 +471,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
 
         <div class="container">
             <div class="sec-title light text-center">
-               <h1> <span class="title">Our Tehham</span> </h1>
+               <h1> <span class="title">Our Team</span> </h1>
                 <h6>Meet the Team</h6>
             </div>
 
