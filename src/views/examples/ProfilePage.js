@@ -125,18 +125,20 @@ export default function ProfilePage() {
             />
             <Row>
               <Col lg='6 order-2 order-lg-0' md='6 order-2 order-lg-0'>
-                <h1 className='profile-title text-left'>
+                <h1 className='profile-title text-left' id="dyk" style={{fontsize: "3.4em",
+    wordspacing: "10px",
+    letterspacing:" 10px"}}>
                  Kosmo  <span>Aliens </span>
                 </h1>
                 <h5 className='text-on-back'>01</h5>
 
               
                 <p className='profile-description'>
-               Kozmos Alien is a collection of 8,888 aliens equipped with advanced technology and ultrasonic weapons.
+               Kozmo Aliens is a collection of 8,888 aliens equipped with advanced technology , ultrasonic weapons and
                with a space strategy  Play to Earn game on ETH ,  launching early  2022!! 
                
                 </p>
-
+<br/>
                 <div className='btn-wrapper profile pt-3'>
                   <Button
                     className='btn-icon btn-round'
@@ -197,7 +199,7 @@ export default function ProfilePage() {
               </Col>
               <Col md='5'>
                 <h1 className='profile-title text-left'>Introducing Kozmo Aliens  Play to earn Game  </h1>
-                <h5 className='text-on-back'>02</h5>
+                <h5 className='text-on-back'>02</h5> <br/>
                 <p className='profile-description text-left'>
                  <span> Fight For Resources and ETH ! </span> Dive into the <span> Kozmo Aliens Universe </span> through a grand strategy game of space exploration, territorial conquest, political domination,  and more!
                   
@@ -231,6 +233,7 @@ export default function ProfilePage() {
          
 
               <Col className='ml-auto mr-auto card-mint' lg='6'>
+              <br/>
                 <Card
                   className='card-coin card-plain '
                   style={{ background: '#9e7599' }}
@@ -421,8 +424,8 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
                     <span class='pointz-des'>
                     <strong>Q3 2022  <br></br> Release of Space Atlas Community and Third Update</strong><br/><br/>
                   Launch of the third update of the Space Atlas game, 
-                  which will include PvE single player mode , a mini game , the Space Atlas marketplace, farming, and occupations. 
-                    </span>
+                  which will include PvE single player mode , a mini game , the Space Atlas marketplace, farming, and occupations. <br/>
+                    </span><br/><br/>
                   </Col>
                   </Fade>
                 </Row>
@@ -432,19 +435,33 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
               <Col md='5'>
                 
                 <h1 className='roadmap-text'>Roadmap Activations</h1>
+                <br/>
               </Col>
              
             </Row>
           </Container>
-          
         </section>
-            <section className='section' style= {{ backgroundsize:"100%" ,backgroundImage: `url("https://i.imgur.com/04dHDSH.png")`}}>
-        
-<h1 id="few" style={{textAlign:"center" }}> <span> Backed by </span> </h1>
-<br/><br/>  <br/>  <br/><br/>  <br/><br/><br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/>   <br/>  <br/>  <br/> 
-<div id="f">
+        <section className="section"> <br/> <br/> <br/>
+        <Fade left>
+          <h1 className="fwa" style={{textAlign:"center", fontSize:"50px"}}> Partners and backers </h1><br/><br/><br/>
+          </Fade>
+          
+        <div class="row"><br/>
+  <div class="col-6 col-sm-4"><img id="k"src="https://www.solchicks.io/wp-content/uploads/2021/11/VC-MASTER-VENTURES.png" style={{marginleft: "-50px"}}/></div> <br/>
+  <div class="col-6 col-sm-4"><img src="https://www.solchicks.io/wp-content/uploads/2021/11/II-GTS.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img src="https://www.solchicks.io/wp-content/uploads/2021/11/II-whatoplay.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img id="b" src="https://www.solchicks.io/wp-content/uploads/2021/10/Blockchain.News-logo_black_bbg.png" style={{height: " 70px" , 
+    margintop: "17px" }}/></div><br/>
   
-</div>
+
+
+  <div class="col-6 col-sm-4"><img src="https://www.solchicks.io/wp-content/uploads/2021/11/CM-FFventures.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img id= "c" src="https://www.solchicks.io/wp-content/uploads/2021/10/coindesk-logo.svg"/></div><br/>
+  <div class="col-6 col-sm-4"><img id="cu" src="https://www.solchicks.io/wp-content/uploads/2021/11/curate_full_logo_280x66.png"/></div>
+  <div class="col-6 col-sm-4"><img id="m" src="https://metaverse.properties/wp-content/uploads/2020/09/Decentraland-1024x374.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img id="fd" src=" https://www.solchicks.io/wp-content/uploads/2021/09/altura.png"/> </div><br/>
+  </div>
+</section>
         <section id="n">
         <section id="n" class="speakers-section" style= {{backgroundImage: `url("https://i.ibb.co/92HJxz2/team-bg.jpg")`}}>
         <div class="parallax-scene parallax-scene-2 anim-icons">
@@ -454,7 +471,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
 
         <div class="container">
             <div class="sec-title light text-center">
-               <h1> <span class="title">Our Team</span> </h1>
+               <h1> <span class="title">Our Tehham</span> </h1>
                 <h6>Meet the Team</h6>
             </div>
 
@@ -547,7 +564,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
         </div>
     </section>
     </section>
-  
+   
         <Footer />
       </div>
     </>
