@@ -1,11 +1,7 @@
 
 
 
-@font-face {
-  font-family: "SpaceMission ";
-  src: url("SpaceMission-rgyw9.otf");
 
-}
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 .rf-card-row {
     display: none;
