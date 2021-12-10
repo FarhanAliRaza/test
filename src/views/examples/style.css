@@ -74,8 +74,11 @@
     #cu{
       margin-left: 3px !important;
     }
+    #what{
+     margin-left: -9px !important;
+     }
     #k{
-      margin-left: 0px !important;
+      margin-left: -5px !important;
     }
     #fish{
       background-size: 400px;
@@ -837,7 +840,7 @@ article, aside, figcaption, figure, section{
 h4{
   font-family: Iceland, sans-serif;
   font-size: 2.25em;
-  letter-spacing: 6px;
+
 }
 
 @media (max-width: 405px){
@@ -1029,9 +1032,10 @@ h4{
     margin-left: 55px;
 }
 #cu{
-  height: 55px;
+     height: 35px;
     margin-top: 40px;
     margin-left: -5px;
+    width: 250px;
 }
 
 
@@ -2073,6 +2077,12 @@ div#exampleModal {
     word-spacing: 10px;
     letter-spacing:10px;
     margin-top: -25px;
+}
+#g{
+margin-left: -16px;
+}
+#m{
+margin-left: -13px;
 }
 .profile-page .profile-description {
   margin-top: -30px;
