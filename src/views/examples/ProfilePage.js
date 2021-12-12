@@ -74,6 +74,12 @@ const carouselItems = [
     altText: 'Slide 3',
 
   }
+  {
+    src: "https://i.imgur.com/WRGwupV.png",
+    altText: 'Slide 3',
+
+  }
+  
 ]
 
 let ps = null
