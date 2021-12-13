@@ -128,7 +128,7 @@ export default function ProfilePage() {
                 <h1 className='profile-title text-left' id="dyk" style={{fontsize: "3.4em",
     wordspacing: "10px",
     letterspacing:" 10px"}}>
-                 Kosmo  <span>Aliens </span>
+                 Kosmo  <span>  Aliens </span>
                 </h1>
                 <h5 className='text-on-back'>01</h5>
 
