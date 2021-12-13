@@ -22,7 +22,6 @@ import { Parallax } from 'react-scroll-parallax';
 import { Line } from "react-chartjs-2";
 import { ParallaxProvider } from 'react-scroll-parallax';
 
-import video from "./trailer.mp4";
 // reactstrap components
 import {
   Button,
