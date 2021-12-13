@@ -79,11 +79,11 @@ export default function ExamplesNavbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <span>Kosmos• </span>
-            Alien Space Club
+            <span>Kosmo• </span>
+            Aliens
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+            Designed and Coded by Leon
           </UncontrolledTooltip>
         </div>
         <Collapse
@@ -97,7 +97,8 @@ export default function ExamplesNavbar() {
             <Row>
               <Col className="collapse-brand" xs="6">
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                  BLK•React
+                <span>Kosmo• </span>
+            Aliens
                 </a>
               </Col>
               <Col className="collapse-close text-right" xs="6">
@@ -115,12 +116,13 @@ export default function ExamplesNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/KozmoAliens"
+                href="/https://twitter.com/KozmoAliens"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Twitter"
               >
-                <i className="fab fa-twitter" />
+              
+              <i className="fab fa-twitter" />
                 <p className="d-lg-none d-xl-none">Twitter</p>
               </NavLink>
             </NavItem>
@@ -137,23 +139,59 @@ export default function ExamplesNavbar() {
                 <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="/landing-page"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Check out our game"
+              >
+                 <i className="tim-icons icon-laptop" />
+                <p className="d-lg-none d-xl-none">Game</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="/landing-page"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Check out our game"
+              >
+                 <i className="tim-icons icon-paper" />
+                <p className="d-lg-none d-xl-none">Whitepaper</p>
+              </NavLink>
+            </NavItem>
+           
+        
             <NavItem>
               <Button
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-examples-navbar-upgrade-pro"
+                href="/landing-page"
               >
-                <i className="tim-icons icon-spaceship" /> Join the Cosmos
+                <i className="tim-icons icon-spaceship" /> Game 
+              </Button>
+            </NavItem>
+
+            <NavItem>
+              <Button
+                className="nav-link d-none d-lg-block"
+                color="primary"
+                target="_blank"
+                href="/landing-page"
+              >
+                <i className="tim-icons icon-paper" /> Whitepaper
               </Button>
             </NavItem>
            
-            <NavItem>
-              <NavLink href="#crap-roadmap">
-                Roadmap
-              </NavLink>
-            </NavItem>
+          
+         
           </Nav>
+
+          
         </Collapse>
       </Container>
     </Navbar>
