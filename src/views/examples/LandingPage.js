@@ -16,8 +16,13 @@
 
 */
 import React from "react";
+import Fade from 'react-reveal/Fade';
+import { Parallax } from 'react-scroll-parallax';
 // react plugin used to create charts
 import { Line } from "react-chartjs-2";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+import video from "./trailer.mp4";
 // reactstrap components
 import {
   Button,
@@ -30,9 +35,12 @@ import {
   ListGroup,
   Container,
   Row,
+  UncontrolledTooltip,
+  UncontrolledCarousel,
   Col,
 } from "reactstrap";
-
+import StarfieldAnimation from 'react-starfield-animation'
+import ReactPlayer from 'react-player'
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
@@ -47,365 +55,495 @@ export default function LandingPage() {
       document.body.classList.toggle("landing-page");
     };
   },[]);
+  const title = document.querySelector("h1");
+  const CHAR_TIME = 30;
+  
+  let text, index;
+  
+  function requestCharAnimation(char, value) {
+    setTimeout(function () {
+      char.textContent = value;
+      char.classList.add("fade-in");
+    }, CHAR_TIME);
+  }
+  
+  function addChar() {
+    const char = document.createElement("span");
+    char.classList.add("char");
+    char.textContent = "▌";
+    title.appendChild(char);
+    requestCharAnimation(char, text.substr(index++, 1));
+    if (index < text.length) {
+      requestChar();
+    }
+  }
+  
+  function requestChar(delay = 0) {
+    setTimeout(addChar, CHAR_TIME + delay);
+  }
+  
+  function start() {
+    index = 0;
+    text = title.textContent.trim();
+    title.textContent = "";
+    requestChar(1000);
+  }
+  
+  const carouselItems = [
+    {
+      src: "https://i.imgur.com/R9gbQHK.jpeg", 
+      altText: 'Slide 1',
+      caption: "F"
+
+    },
+    {
+      src: "https://i.imgur.com/WRGwupV.png", 
+      altText: 'Slide 2',
+      caption: ""
+      
+    },
+    {
+      src: "https://i.imgur.com/N5rBNth.png",
+      altText: 'Slide 3',
+  
+    },
+    {
+      src: "https://i.imgur.com/HWWmoU2.png",
+      altText: 'Slide 3',
+  
+    },
+
+    {
+      src: "https://i.imgur.com/IPdJRvQ.png",
+      altText: 'Slide 3',
+  
+    }
+
+ 
+  ]
+
+  const carouselItems2 = [
+    {
+      src: " https://i.imgur.com/XLzZNXB.jpg", 
+      altText: 'Slide 1',
+      caption: ""
+
+    },
+    {
+      src: "https://i.imgur.com/KOihQQK.jpg", 
+      altText: 'Slide 2',
+      caption: ""
+      
+    },
+    {
+      src: "https://i.imgur.com/iX9LQyA.png",
+      altText: 'Slide 3',
+  
+    },
+    {
+      src: "https://i.imgur.com/t3CuqBK.jpg",
+      altText: 'Slide 3',
+  
+    },
+
+    {
+      src: "https://i.imgur.com/58ZGACS.png",
+      altText: 'Slide 3',
+  
+    }
+
+ 
+  ]
+ 
+  console.clear();
+
+const slides = [
+  {
+    title: "Machu Picchu",
+    subtitle: "Peru",
+    description: "Adventure is never far away",
+    image:
+      "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+  },
+  {
+    title: "Chamonix",
+    subtitle: "France",
+    description: "Let your dreams come true",
+    image:
+      "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+  },
+  {
+    title: "Mimisa Rocks",
+    subtitle: "Australia",
+    description: "A piece of heaven",
+    image:
+      "https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+  },
+  {
+    title: "Four",
+    subtitle: "Australia",
+    description: "A piece of heaven",
+    image:
+      "https://images.unsplash.com/flagged/photo-1564918031455-72f4e35ba7a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+  },
+  {
+    title: "Five",
+    subtitle: "Australia",
+    description: "A piece of heaven",
+    image:
+      "https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+  }
+];
+
+function useTilt(active) {
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    if (!ref.current || !active) {
+      return;
+    }
+
+    const state = {
+      rect: undefined,
+      mouseX: undefined,
+      mouseY: undefined
+    };
+
+    let el = ref.current;
+
+    const handleMouseMove = (e) => {
+      if (!el) {
+        return;
+      }
+      if (!state.rect) {
+        state.rect = el.getBoundingClientRect();
+      }
+      state.mouseX = e.clientX;
+      state.mouseY = e.clientY;
+      const px = (state.mouseX - state.rect.left) / state.rect.width;
+      const py = (state.mouseY - state.rect.top) / state.rect.height;
+
+      el.style.setProperty("--px", px);
+      el.style.setProperty("--py", py);
+    };
+
+    el.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      el.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [active]);
+
+  return ref;
+}
+
+const initialState = {
+  slideIndex: 0
+};
+
+const slidesReducer = (state, event) => {
+  if (event.type === "NEXT") {
+    return {
+      ...state,
+      slideIndex: (state.slideIndex + 1) % slides.length
+    };
+  }
+  if (event.type === "PREV") {
+    return {
+      ...state,
+      slideIndex:
+        state.slideIndex === 0 ? slides.length - 1 : state.slideIndex - 1
+    };
+  }
+};
+
+function Slide({ slide, offset }) {
+  const active = offset === 0 ? true : null;
+  const ref = useTilt(active);
+
+  return (
+    <div
+      ref={ref}
+      className="slide"
+      data-active={active}
+      style={{
+        "--offset": offset,
+        "--dir": offset === 0 ? 0 : offset > 0 ? 1 : -1
+      }}
+    >
+      <div
+        className="slideBackground"
+        style={{
+          backgroundImage: `url('${slide.image}')`
+        }}
+      />
+      <div
+        className="slideContent"
+        style={{
+          backgroundImage: `url('${slide.image}')`
+        }}
+      >
+        <div className="slideContentInner">
+          <h2 className="slideTitle">{slide.title}</h2>
+          <h3 className="slideSubtitle">{slide.subtitle}</h3>
+          <p className="slideDescription">{slide.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+
+  return (
+    <div className="slides">
+      <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
+
+      {[...slides, ...slides, ...slides].map((slide, i) => {
+        let offset = slides.length + (state.slideIndex - i);
+        return <Slide slide={slide} offset={offset} key={i} />;
+      })}
+      <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+    </div>
+  );
+}
+
+
   return (
     <>
       <ExamplesNavbar />
-      <div className="wrapper">
+      
+      <div className="wrappers"  id="wrp" style={{ backgroundImage: `url("https://wallup.net/wp-content/uploads/2019/09/1007183-star-citizen-game-action-fighting-fps-futuristic-sci-fi-shooter-simulator-space-spaceship-startegy-tactical-space-science-fiction-technics-ship.jpg")`, margintop: "-10px",  backgroundsize: "contain"}}
+    >     
+          <div id="foglayer_01" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_02" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_03" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
         <div className="page-header">
-          <img
-            alt="..."
-            className="path"
-            src={require("assets/img/blob.png").default}
-          />
-          <img
-            alt="..."
-            className="path2"
-            src={require("assets/img/path2.png").default}
-          />
-          <img
-            alt="..."
-            className="shapes triangle"
-            src={require("assets/img/triunghiuri.png").default}
-          />
-          <img
-            alt="..."
-            className="shapes wave"
-            src={require("assets/img/waves.png").default}
-          />
-          <img
-            alt="..."
-            className="shapes squares"
-            src={require("assets/img/patrat.png").default}
-          />
-          <img
-            alt="..."
-            className="shapes circle"
-            src={require("assets/img/cercuri.png").default}
-          />
-          <div className="content-center">
-            <Row className="row-grid justify-content-between align-items-center text-left">
-              <Col lg="6" md="6">
-                <h1 className="text-white">
-                  We keep your coin <br />
-                  <span className="text-white">secured</span>
-                </h1>
-                <p className="text-white mb-3">
-                  A wonderful serenity has taken possession of my entire soul,
-                  like these sweet mornings of spring which I enjoy with my
-                  whole heart. I am alone, and feel...
-                </p>
-                <div className="btn-wrapper mb-3">
-                  <p className="category text-success d-inline">
-                    From 9.99%/mo
-                  </p>
+       
+          <div className="content-center"> <br></br>
+          <Container className='align-items-center'>
+            <StarfieldAnimation
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%'
+              }}
+            />       </Container><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <h1 id="f"><br></br>
+               <span> Welcome to the Kozmo Aliens Universe!  </span>
+                </h1><br></br><br></br>
+                <p>Embrace the life of a seafaring civilization as you sail the open expanses of the galaxy with Stellaris' most immersive pack yet. Let a wave of new customizable options for your empire crash into Stellaris, with a treasure trove of new species portraits, ship set, origins and more.</p>
+            <Row className=""> <br></br><br></br>
+              <Col classname="col-md-5">
+               
+                <div className="btn-wrapper pt-3">
+                <br></br><br></br>  <br></br><br></br> 
+            
+                <button class="kave-btn2">
+    <span class="kave-line"></span>
+  Watch Trailer
+</button>
+                  
+                  
+                  <button class="kave-btn">
+    <span class="kave-line"></span>
+    Mint Now !
+</button>
+
+                  </div> 
+                  
+                  <div className='btn-wrapper profile pt-3'> <br></br><br></br>  <br></br><br></br>  <br></br><br></br> <br></br><br></br>  <br></br><br></br>  <br></br><br></br>
                   <Button
-                    className="btn-link"
-                    color="success"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                    size="sm"
+                    className='btn-icon btn-round'
+                    color='twitter'
+                    href='https://twitter.com/KozmoAliens'
+                    id='tooltip639225725'
+                    target='_blank'
                   >
-                    <i className="tim-icons icon-minimal-right" />
+                    <i className='fab fa-twitter' />
                   </Button>
+                  <UncontrolledTooltip delay={0} target='tooltip639225725'>
+                    Follow us
+                  </UncontrolledTooltip>
+                  <Button
+                    className='btn-icon btn-round'
+                    color='facebook'
+                    href='https://www.instagram.com/kozmoaliens/'
+                    id='tooltip982846143'
+                    target='_blank'
+                  >
+                    <i className='fab fa-instagram' />
+                  </Button>
+                  <UncontrolledTooltip delay={0} target='tooltip982846143'>
+                    Like us
+                  </UncontrolledTooltip>
+                  <Button
+                    className='btn-icon btn-round'
+                    color='dribbble'
+                    href='https://discord.gg/xRN4MtsfVN'
+                    id='tooltip951161185'
+                    target='_blank'
+                    style={{marginleft: '80px'}}
+                  >
+                    <i className='fab fa-discord' />
+                  </Button>
+                  <UncontrolledTooltip delay={0} target='tooltip951161185'>
+                    Join our Discord
+                  </UncontrolledTooltip>
                 </div>
-                <div className="btn-wrapper">
-                  <div className="button-container">
-                    <Button
-                      className="btn-icon btn-simple btn-round btn-neutral"
-                      color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-icon btn-simple btn-round btn-neutral"
-                      color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-dribbble" />
-                    </Button>
-                    <Button
-                      className="btn-icon btn-simple btn-round btn-neutral"
-                      color="default"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook" />
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col lg="4" md="5">
-                <img
-                  alt="..."
-                  className="img-fluid"
-                  src={require("assets/img/etherum.png").default}
-                />
-              </Col>
+
+                  </Col>
+             
+                
+           
+              
             </Row>
           </div>
-        </div>
-        <section className="section section-lg">
-          <section className="section">
-            <img
-              alt="..."
-              className="path"
-              src={require("assets/img/path4.png").default}
-            />
-            <Container>
-              <Row className="row-grid justify-content-between">
-                <Col className="mt-lg-5" md="5">
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-trophy text-warning" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,237</CardTitle>
-                                <p />
-                                <p className="card-category">Awards</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats upper bg-default">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-coins text-white" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">3,653</CardTitle>
-                                <p />
-                                <p className="card-category">Commits</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-gift-2 text-info" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">593</CardTitle>
-                                <p />
-                                <p className="card-category">Presents</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                    <Col className="px-2 py-2" lg="6" sm="12">
-                      <Card className="card-stats">
-                        <CardBody>
-                          <Row>
-                            <Col md="4" xs="5">
-                              <div className="icon-big text-center icon-warning">
-                                <i className="tim-icons icon-credit-card text-success" />
-                              </div>
-                            </Col>
-                            <Col md="8" xs="7">
-                              <div className="numbers">
-                                <CardTitle tag="p">10,783</CardTitle>
-                                <p />
-                                <p className="card-category">Forks</p>
-                              </div>
-                            </Col>
-                          </Row>
-                        </CardBody>
-                      </Card>
-                    </Col>
-                  </Row>
-                </Col>
-                <Col md="6">
-                  <div className="pl-md-5">
-                    <h1>
-                      Large <br />
-                      Achivements
-                    </h1>
-                    <p>
-                      I should be capable of drawing a single stroke at the
-                      present moment; and yet I feel that I never was a greater
-                      artist than now.
-                    </p>
-                    <br />
-                    <p>
-                      When, while the lovely valley teems with vapour around me,
-                      and the meridian sun strikes the upper surface of the
-                      impenetrable foliage of my trees, and but a few stray.
-                    </p>
-                    <br />
-                    <a
-                      className="font-weight-bold text-info mt-5"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Show all{" "}
-                      <i className="tim-icons icon-minimal-right text-info" />
-                    </a>
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </section>
-        </section>
-        <section className="section section-lg">
-          <img
-            alt="..."
-            className="path"
-            src={require("assets/img/path4.png").default}
-          />
-          <img
-            alt="..."
-            className="path2"
-            src={require("assets/img/path5.png").default}
-          />
-          <img
-            alt="..."
-            className="path3"
-            src={require("assets/img/path2.png").default}
-          />
+        </div>      
+        <ParallaxProvider>
+                    
+                
+        
+    
+        <section id="about" className="section-about --pc" 
+         style={{ backgroundImage: `url("https://i.imgur.com/VlIPGC3.png")`, margintop: "-10px",  backgroundsize: "contain"}}
+       >
+
+  
+
+
+  <article class="section-about-wrapper">
+    <div class="-label">A Grand Strategy 4x science-fiction game</div>
+
+    <h2 class="-heading">Explore a galaxy full of wonder</h2>
+
+    <div class="-description">
+      <p>
+        Discover a spectacular and ever-changing universe! Explore, discover and interact with a multitude of species as you journey among the stars. Forge a galactic empire as you delve into newly discovered planets, unearth treasures and establish a direction for your society. Uncover a grand strategy game that reaches the very edges of the universe.
+      </p>
+    </div>
+
+
+    <div class="-cta">
+      
+<a class="
+    button
+    button--color-terracota button--xlarge
+    do-display-video-modal js--pdxdol-exclude
+  " href="https://drive.google.com/file/d/1VuXz7eUAt8NGFleIol5XyR5aScU1fS6P/view?usp=sharing">
+  
+  
+        Read Our Whitepaper
+
+
+  <span class="button__corners"><span></span></span>
+</a>
+    </div>
+  </article>
+  
+</section>
+</ParallaxProvider>
+                    
+        <section className="section section-lg" style={{ backgroundImage: `url("https://images2.alphacoders.com/794/thumb-1920-794397.png")`}}>
+         
+        <div id='sections' style={{ backgroundcolor: 'red' }}>
+          <div id="foglayer_01" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_02" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<div id="foglayer_03" class="fog">
+  <div class="image01"></div>
+  <div class="image02"></div>
+</div>
+<br/>  
           <Container>
-            <Row className="justify-content-center">
-              <Col lg="12">
-                <h1 className="text-center">Your best benefit</h1>
-                <Row className="row-grid justify-content-center">
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-primary">
-                        <i className="tim-icons icon-money-coins" />
-                      </div>
-                      <h4 className="info-title">Low Commission</h4>
-                      <hr className="line-primary" />
-                      <p>
-                        Divide details about your work into parts. Write a few
-                        lines about each one. A paragraph describing a feature
-                        will.
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-warning">
-                        <i className="tim-icons icon-chart-pie-36" />
-                      </div>
-                      <h4 className="info-title">High Incomes</h4>
-                      <hr className="line-warning" />
-                      <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing feature will be a feature.
-                      </p>
-                    </div>
-                  </Col>
-                  <Col lg="3">
-                    <div className="info">
-                      <div className="icon icon-success">
-                        <i className="tim-icons icon-single-02" />
-                      </div>
-                      <h4 className="info-title">Verified People</h4>
-                      <hr className="line-success" />
-                      <p>
-                        Divide details about your product or agency work into
-                        parts. Write a few lines about each one. A paragraph
-                        describing be enough.
-                      </p>
-                    </div>
-                  </Col>
+          <br/>  
+            <Row className='justify-content-between'>
+              <Col md='6'>
+                <Row className='justify-content-between align-items-center'>
+                  <UncontrolledCarousel items={carouselItems} />
                 </Row>
+              </Col>
+       
+              <Col md='5'>
+              <div className="px-md-5">
+              <Fade left>
+                <h1 className='profile-title text-left'>Deep and Varied Exploration  !  </h1>
+         </Fade>
+         <Fade left>
+                <p className='profile-description text-left'>
+                Every game begins with a civilization that has just discovered the means to travel between stars and is ready to explore the galaxy. Have your science ships survey and explore anomalies, leading you into a myriad of quests, introducing strange worlds with even stranger stories and discoveries that may completely change your outcome.
+                </p>
+                </Fade>
+                <Fade left>
+                <div className='btn-wrapper pt-3 d-inline-block'> <br/>
+                  <Button
+                    className='btn-simple'
+                    color='info'
+                    href='https://discord.gg/xRN4MtsfVN'
+                    onClick={e => e.preventDefault()}
+                    style={{marginleft: "61px"}}
+                  > 
+                    <i className='fab fa-discord' /> Join Our Discord 
+                  </Button>
+                  
+                  </div>
+                  </Fade>
+                </div>
               </Col>
             </Row>
           </Container>
+        </div>
+              
         </section>
         <section className="section section-lg section-safe">
-          <img
-            alt="..."
-            className="path"
-            src={require("assets/img/path5.png").default}
-          />
+       
           <Container>
             <Row className="row-grid justify-content-between">
-              <Col md="5">
-                <img
+              <Col md="6"><br/>
+              <img
+              id="trash"
                   alt="..."
-                  className="img-fluid floating"
-                  src={require("assets/img/chester-wade.jpg").default}
+                  className="img-fluid"
+                  src="https://i.ibb.co/q5QcS39/k.webp"
                 />
-                <Card className="card-stats bg-danger">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">100%</CardTitle>
-                        <p className="card-category text-white">Safe</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-info">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">573 K</CardTitle>
-                        <p className="card-category text-white">
-                          Satisfied customers
-                        </p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-default">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
               </Col>
-              <Col md="6">
+              <Col md="5">
                 <div className="px-md-5">
                   <hr className="line-success" />
-                  <h3>Awesome features</h3>
+                  <Fade left>
+                  <h1>Stunning Space Visuals</h1>
+                  </Fade>
+                  <Fade left>
                   <p>
-                    The design system comes with three pre-built pages to help
-                    you get started faster. You can change the text and images
-                    and you're good to go.
+                
+                  With characteristically complex unique planets and celestial bodies, you will enter a whirlwind of spectacles in a highly detailed universe.
                   </p>
+                  
+                  </Fade>
                   <ul className="list-unstyled mt-5">
                     <li className="py-2">
                       <div className="d-flex align-items-center">
                         <div className="icon icon-success mb-2">
                           <i className="tim-icons icon-vector" />
                         </div>
+                        
                         <div className="ml-3">
-                          <h6>Carefully crafted components</h6>
+                          <h6>Carefully crafted 3D Models</h6>
                         </div>
                       </div>
                     </li>
@@ -415,7 +553,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-tap-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Amazing page examples</h6>
+                          <h6>Amazing Cinematic Space battles </h6>
                         </div>
                       </div>
                     </li>
@@ -425,7 +563,7 @@ export default function LandingPage() {
                           <i className="tim-icons icon-single-02" />
                         </div>
                         <div className="ml-3">
-                          <h6>Super friendly support team</h6>
+                          <h6>Experienced and professional Team with  4+  years  of experience in motion design and 3D arts!</h6>
                         </div>
                       </div>
                     </li>
@@ -435,39 +573,72 @@ export default function LandingPage() {
             </Row>
           </Container>
         </section>
-        <section className="section section-lg">
+
+        <section className="section section-lg section-safe">
           <img
             alt="..."
             className="path"
-            src={require("assets/img/path4.png").default}
+            src={require("assets/img/path5.png").default}
           />
-          <img
-            alt="..."
-            className="path2"
-            src={require("assets/img/path2.png").default}
-          />
-          <Col md="12">
-            <Card className="card-chart card-plain">
-              <CardHeader>
-                <Row>
-                  <Col className="text-left" sm="6">
-                    <hr className="line-info" />
-                    <h5 className="card-category">Total Investments</h5>
-                    <CardTitle tag="h2">Performance</CardTitle>
-                  </Col>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                <div className="chart-area">
-                  <Line
-                    data={bigChartData.data}
-                    options={bigChartData.options}
-                  />
+          <Container>
+            <Row className="row-grid justify-content-between">
+              <Col md="5">
+              <hr className="line-success" />
+              <Fade left>
+                  <h1>Interstellar Warfare! </h1>
+                  </Fade>
+                  <Fade left>
+                  <p>
+                  An eternal cycle of war, diplomacy, political tensions , suspicions and alliances await you.
+                   Defend or attack  with fully customizable war fleets & alien troopers.Strategy and  adaptation is the key to victory. 
+                   Choose from an array of complex technologies from the technology reserach menu and select your Alien heroes to aid
+                   you in battle.  
+                  You have a multitude of capabilities to choose from to meet the unknown quests that await.
+                  </p>
+                  </Fade>
+                  <ul className="list-unstyled mt-5">
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-vector" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>Over 100 Alien Commanders to choose from !</h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-tap-02" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>prepare and defend your fleet for battle ! </h6>
+                        </div>
+                      </div>
+                    </li>
+                    <li className="py-2">
+                      <div className="d-flex align-items-center">
+                        <div className="icon icon-success mb-2">
+                          <i className="tim-icons icon-single-02" />
+                        </div>
+                        <div className="ml-3">
+                          <h6>Choose the correct strategies and Lead your galaxy and emprie to victory ! </h6>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+              </Col>
+              <Col md="6">
+                <div className="md-7">
+                  <hr className="line-success" />
+                  <UncontrolledCarousel items={carouselItems2} />
                 </div>
-              </CardBody>
-            </Card>
-          </Col>
+              </Col>
+            </Row>
+          </Container>
         </section>
+       
         <section className="section section-lg section-coins">
           <img
             alt="..."
@@ -476,13 +647,15 @@ export default function LandingPage() {
           />
           <Container>
             <Row>
-              <Col md="4">
+              <Col md="10">
                 <hr className="line-info" />
                 <h1>
-                  Choose the coin{" "}
-                  <span className="text-info">that fits your needs</span>
+                Explore the limitless wonders of the Kozmo Aliens universe ! <br/><br/><br/><br/>
+                 <span className="text-info">Let the stars guide you on your epic journey through the galaxy. </span>
                 </h1>
+           
               </Col>
+              
             </Row>
             <Row>
               <Col md="4">
@@ -497,22 +670,22 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Light Coin</h4>
-                        <span>Plan</span>
+                        <h4 className="text-uppercase"> Play to Earn </h4>
+                        <span>Earn $SPACE</span>
                         <hr className="line-primary" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>50 messages</ListGroupItem>
-                        <ListGroupItem>100 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>Upgrade Your Alien </ListGroupItem>
+                        <ListGroupItem> Win battles </ListGroupItem>
+                        <ListGroupItem>Trade Aliens on Marketplace</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="primary">
-                      Get plan
+                    Join Discord
                     </Button>
                   </CardFooter>
                 </Card>
@@ -529,22 +702,22 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Dark Coin</h4>
-                        <span>Plan</span>
+                        <h4 className="text-uppercase"> Marketplace</h4>
+                        <span>Marketplace</span>
                         <hr className="line-success" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>150 messages</ListGroupItem>
-                        <ListGroupItem>1000 emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>Sell Aliens</ListGroupItem>
+                        <ListGroupItem>Buy spaceships</ListGroupItem>
+                        <ListGroupItem>Sell Planet Data</ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="success">
-                      Get plan
+                    Join Discord
                     </Button>
                   </CardFooter>
                 </Card>
@@ -561,22 +734,22 @@ export default function LandingPage() {
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
-                        <h4 className="text-uppercase">Bright Coin</h4>
-                        <span>Plan</span>
+                        <h4 className="text-uppercase"> Land </h4>
+                        <span>Land</span>
                         <hr className="line-info" />
                       </Col>
                     </Row>
                     <Row>
                       <ListGroup>
-                        <ListGroupItem>350 messages</ListGroupItem>
-                        <ListGroupItem>10K emails</ListGroupItem>
-                        <ListGroupItem>24/7 Support</ListGroupItem>
+                        <ListGroupItem>Build Buildings</ListGroupItem>
+                        <ListGroupItem>Terraform Planets</ListGroupItem>
+                        <ListGroupItem>Explore Stars </ListGroupItem>
                       </ListGroup>
                     </Row>
                   </CardBody>
                   <CardFooter className="text-center">
                     <Button className="btn-simple" color="info">
-                      Get plan
+                      Join Discord
                     </Button>
                   </CardFooter>
                 </Card>
