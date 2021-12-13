@@ -74,12 +74,6 @@ const carouselItems = [
     altText: 'Slide 3',
 
   }
-  {
-    src: "https://i.imgur.com/WRGwupV.png",
-    altText: 'Slide 3',
-
-  }
-  
 ]
 
 let ps = null
@@ -454,14 +448,14 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
           
         <div class="row"><br/>
   <div class="col-6 col-sm-4"><img id="k"src="https://www.solchicks.io/wp-content/uploads/2021/11/VC-MASTER-VENTURES.png" style={{marginleft: "-50px"}}/></div> <br/>
-  <div class="col-6 col-sm-4"><img id="g" src="https://www.solchicks.io/wp-content/uploads/2021/11/II-GTS.png"/></div><br/>
-  <div class="col-6 col-sm-4"><img id="what" src="https://www.solchicks.io/wp-content/uploads/2021/11/II-whatoplay.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img src="https://www.solchicks.io/wp-content/uploads/2021/11/II-GTS.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img id="wj" src="https://www.solchicks.io/wp-content/uploads/2021/11/II-whatoplay.png"/></div><br/>
   <div class="col-6 col-sm-4"><img id="b" src="https://www.solchicks.io/wp-content/uploads/2021/10/Blockchain.News-logo_black_bbg.png" style={{height: " 70px" , 
     margintop: "17px" }}/></div><br/>
   
 
 
-  <div class="col-6 col-sm-4"><img id="fff" src="https://www.solchicks.io/wp-content/uploads/2021/11/CM-FFventures.png"/></div><br/>
+  <div class="col-6 col-sm-4"><img src="https://www.solchicks.io/wp-content/uploads/2021/11/CM-FFventures.png"/></div><br/>
   <div class="col-6 col-sm-4"><img id= "c" src="https://www.solchicks.io/wp-content/uploads/2021/10/coindesk-logo.svg"/></div><br/>
   <div class="col-6 col-sm-4"><img id="cu" src="https://www.solchicks.io/wp-content/uploads/2021/11/curate_full_logo_280x66.png"/></div>
   <div class="col-6 col-sm-4"><img id="m" src="https://metaverse.properties/wp-content/uploads/2020/09/Decentraland-1024x374.png"/></div><br/>
@@ -477,7 +471,7 @@ Every Kozmo Alien gains 10 $Space per day, which can be claimable by paying gas.
 
         <div class="container">
             <div class="sec-title light text-center">
-               <h1> <span class="title">Our Team</span> </h1>
+               <h1> <span class="title">Our Tehham</span> </h1>
                 <h6>Meet the Team</h6>
             </div>
 
